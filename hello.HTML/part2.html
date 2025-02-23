@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2 - Card Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+        }
+
+        .card {
+            width: 424px;
+            height: 651px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card_image_part {
+            width: 424px;
+            height: 283px;
+            background-image: url(/Assets/pizza.png);
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        .card_bottom_part {
+            width: 424px;
+            height: 207px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .pizza_burg_box {
+            width: 187px;
+            height: 56px;
+            background-color: rgba(82, 195, 3, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            color: #52C303;
+        }
+
+        .card_bottom_part h1 {
+            width: 282px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0;
+            color: black;
+        }
+
+        .card_bottom_part p {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            color: gray;
+            margin: 0;
+        }
+
+        .shopbutton {
+            background-color: #52C303;
+            color: white;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 32px 21px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 212px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shopbutton:hover {
+            background-color: #3d9202;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card_image_part"></div>
+        <div class="card_bottom_part">
+            <div class="pizza_burg_box">Pizza Burg</div>
+            <h1>Up to 50% Off</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+            <button class="shopbutton">Watch All Sells</button>
+        </div>
+    </div>
+
+</body>
+</html>
