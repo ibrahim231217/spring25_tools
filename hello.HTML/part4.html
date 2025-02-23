@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Left side: Background image */
+        .image-container {
+            flex: 1; /* Takes up 50% of the space */
+            background-image: url(/Assets/foods.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Right side: Text content */
+        .content-container {
+            flex: 1; /* Takes up 50% of the space */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5%; /* Adds some space from the left edge */
+        }
+
+        .about-us-heading {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 32px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-text {
+            font-size: 24px;
+            font-weight: 500;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .follow-us-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        .social-links img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left side: Background image -->
+    <div class="image-container"></div>
+
+    <!-- Right side: Text content -->
+    <div class="content-container">
+        <div class="about-us-heading">About Us</div>
+        <div class="tagline">We always make sure to provide <br> you with good food</div>
+        <div class="newsletter-text">Don't miss a thing! Subscribe to our newsletter</div>
+        <div class="follow-us-text">Follow Us On</div>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
